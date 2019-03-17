@@ -1,0 +1,69 @@
+body {
+  left: 0;
+  top: 0;
+}
+
+#sudoku-container {
+background: #dadada;
+position: relative;
+width: 50%;
+left: 25%;
+}
+
+#sudoku-container:after {
+content: "";
+display: block;
+padding-top: 100%;
+}
+
+#controllers {
+position: relative;
+background: red;
+width: 50%;
+padding-top: 10%;
+left: 25%;
+margin-top: 10%;
+}
+
+#container {
+position: absolute;
+width: 100%;
+height: 100%;
+align-content: space-around;
+vertical-align: middle;
+}
+
+
+#sudoku-boxes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  left: 0.5%;
+  vertical-align: middle;
+}
+
+.sudoku-box {
+  background: white;
+  width: 10%;
+  height: 10%;
+  margin: 0.5%;
+  display: flex;
+}
+
+.sudoku-box p {
+  margin: auto;
+  font-size: x-large;
+  font-family: sans-serif;
+}
+
+.known-box {
+  color: black;
+}
+
+.unknown-box {
+  color: blue;
+}
+
